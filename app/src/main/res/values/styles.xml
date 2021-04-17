@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="actionBarStyle">@style/SardiniaAppBarStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!-- App bar style -->
+    <style name="SardiniaAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- Remove the shadow below the app bar -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+        <item name="tabBackground">@color/primary_color</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
+    </style>
+
+
+    <!-- Category name for the beaches in Sardinia [CHAR LIMIT=20] -->
+    <string name="category_beaches">Beaches</string>
+
+
+
+    <!-- Category name for the cities in Sardinia [CHAR LIMIT=20] -->
+    <string name="category_cities">Cities</string>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

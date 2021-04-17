@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tour Sardinia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+   <string name="cala_goritze">Cala Goritze</string>
+    <string name="porto_istana">Porto Istana</string>
+    <string name="sapiaggia_del_principe">Spiaggia del Principe</string>
+    <string name="tuerredda">Tuerredda</string>
+    <string name="stintino">Stintino</string>
+
+
+
+
+    <string name="cagliari">Cagliari</string>
+    <string name="alghero">Alghero</string>
+    <string name="nuoro">Nuoro</string>
+    <string name="oristano">Oristano</string>
+    <string name="sassari">Sassari</string>
+</resources>
