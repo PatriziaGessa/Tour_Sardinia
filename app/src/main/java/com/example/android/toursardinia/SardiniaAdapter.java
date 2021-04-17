@@ -31,20 +31,25 @@ public class SardiniaAdapter extends ArrayAdapter<Sardinia> {
 
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.sardinia_list, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
 
         Sardinia currentSardinia = getItem(position);
-        TextView textView = listItemView.findViewById(R.id.text);
-        textView.setText(currentSardinia.getTitle());
+
+        TextView titleTexView = listItemView.findViewById(R.id.textTitle);
+        titleTexView.setText(currentSardinia.getmTitle());
+
+
+        TextView descriptionTextView = listItemView.findViewById(R.id.textDescription);
+        descriptionTextView.setText(currentSardinia.getmDescription());
 
 
         ImageView imageView = listItemView.findViewById(R.id.image);
         if (currentSardinia.hasImage()) {
 
             //get the imageResource get and set it as source of the image view
-            imageView.setImageResource(currentSardinia.getImageResourceId());
+            imageView.setImageResource(currentSardinia.getmImageResourceId());
 
             //make the image view visible
             imageView.setVisibility(View.VISIBLE);

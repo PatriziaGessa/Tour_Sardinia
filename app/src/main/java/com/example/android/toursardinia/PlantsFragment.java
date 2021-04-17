@@ -13,11 +13,12 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
+ * create an instance of this fragment.
  */
-public class CitiesFragment extends Fragment {
+public class PlantsFragment extends Fragment {
 
 
-    public CitiesFragment() {
+    public PlantsFragment() {
         // Required empty public constructor
     }
 
@@ -31,11 +32,11 @@ public class CitiesFragment extends Fragment {
         // Inflate the layout for this fragment
 
         final ArrayList<Sardinia> sardiniaList = new ArrayList<>();
-        sardiniaList.add(new Sardinia(R.string.cagliari, R.string.describe_cagliari, R.drawable.cagliari_principale));
-        sardiniaList.add(new Sardinia(R.string.alghero, R.string.describe_alghero, R.drawable.alghero));
-        sardiniaList.add(new Sardinia(R.string.nuoro, R.string.describe_nuoro, R.drawable.nuoro));
-        sardiniaList.add(new Sardinia(R.string.sassari, R.string.describe_sassari, R.drawable.sassari));
-        sardiniaList.add(new Sardinia(R.string.oristano, R.string.describe_oristano, R.drawable.oristano));
+        sardiniaList.add(new Sardinia(R.string.alloro, R.string.describe_alloro, R.drawable.alloro));
+        sardiniaList.add(new Sardinia(R.string.corbezzolo, R.string.describe_corbezzolo, R.drawable.cobezzolo));
+        sardiniaList.add(new Sardinia(R.string.lentischio, R.string.describe_lentischio, R.drawable.lentisco));
+        sardiniaList.add(new Sardinia(R.string.mirto, R.string.describe_mirto, R.drawable.mirto));
+        sardiniaList.add(new Sardinia(R.string.elicriso, R.string.describe_elicriso, R.drawable.elicriso));
 
 
         SardiniaAdapter sardiniaAdapter = new SardiniaAdapter(getActivity(), sardiniaList);
@@ -45,6 +46,7 @@ public class CitiesFragment extends Fragment {
 
         return rootView;
 
-
     }
+
+
 }

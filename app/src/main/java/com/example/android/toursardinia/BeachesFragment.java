@@ -33,12 +33,11 @@ public class BeachesFragment extends Fragment {
         // Inflate the layout for this fragment
 
         final ArrayList<Sardinia> sardiniaList = new ArrayList<>();
-        sardiniaList.add(new Sardinia(R.string.cala_goritze, R.drawable.cala_goritze));
-        sardiniaList.add(new Sardinia(R.string.porto_istana, R.drawable.porto_istana));
-        sardiniaList.add(new Sardinia(R.string.sapiaggia_del_principe, R.drawable.spiaggia_del_principe));
-        sardiniaList.add(new Sardinia(R.string.tuerredda, R.drawable.tuerredda));
-        sardiniaList.add(new Sardinia(R.string.porto_istana, R.drawable.porto_istana));
-        sardiniaList.add(new Sardinia(R.string.stintino, R.drawable.la_pelosa_stintino));
+        sardiniaList.add(new Sardinia(R.string.cala_goritze, R.string.describe_cala_goritze, R.drawable.cala_goritze));
+        sardiniaList.add(new Sardinia(R.string.porto_istana, R.string.describe_porto_isana, R.drawable.porto_istana));
+        sardiniaList.add(new Sardinia(R.string.sapiaggia_del_principe, R.string.describe_spiaggia_del_principe, R.drawable.spiaggia_del_principe));
+        sardiniaList.add(new Sardinia(R.string.tuerredda, R.string.describe_tuerredda, R.drawable.tuerredda));
+        sardiniaList.add(new Sardinia(R.string.stintino, R.string.describe_stintino, R.drawable.la_pelosa_stintino));
 
 
         SardiniaAdapter sardiniaAdapter = new SardiniaAdapter(getActivity(), sardiniaList);

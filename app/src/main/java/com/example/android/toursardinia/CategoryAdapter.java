@@ -13,12 +13,12 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class CategoryAdapter extends FragmentStatePagerAdapter {
 
-    private Context context;
+    private Context mContext;
 
 
     public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        context = context;
+        mContext = context;
 
     }
 
@@ -26,11 +26,15 @@ public class CategoryAdapter extends FragmentStatePagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-       if(position == 0) {
-           return new BeachesFragment();
-       } else {
-           return new CitiesFragment();
-       }
+        if (position == 0) {
+            return new BeachesFragment();
+        } else if (position == 1) {
+            return new CitiesFragment();
+        } else if (position == 2) {
+            return new FoodFragment();
+        } else {
+            return new PlantsFragment();
+        }
     }
 
 
@@ -38,15 +42,18 @@ public class CategoryAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return context.getString(R.string.category_beaches);
+            return mContext.getString(R.string.category_beaches);
+        } else if (position == 1) {
+            return mContext.getString(R.string.category_cities);
+        } else if (position == 2) {
+            return mContext.getString(R.string.category_food);
         } else {
-            return context.getString(R.string.category_cities);
-        }
+            return mContext.getString(R.string.category_plants);        }
 
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 }

@@ -1,17 +1,12 @@
 <resources>
     <string name="app_name">Tour Sardinia</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
-   <string name="cala_goritze">Cala Goritze</string>
-    <string name="porto_istana">Porto Istana</string>
+    <string name="cala_goritze">Cala Goritze</string>
+    <string name="porto_istana">Spiaggia porto Istana</string>
     <string name="sapiaggia_del_principe">Spiaggia del Principe</string>
     <string name="tuerredda">Tuerredda</string>
     <string name="stintino">Stintino</string>
-
-
 
 
     <string name="cagliari">Cagliari</string>
@@ -19,4 +14,64 @@
     <string name="nuoro">Nuoro</string>
     <string name="oristano">Oristano</string>
     <string name="sassari">Sassari</string>
+
+
+    <string name="culurgiones">Culurgiones</string>
+    <string name="malloreddusu">Malloreddus</string>
+    <string name="pane_carasu">Pane carasau</string>
+    <string name="porcheddu">Porcheddu</string>
+    <string name="sebadas">Sebadas</string>
+
+
+    <string name="alloro">Laurus nobilis</string>
+    <string name="corbezzolo">Arbutus unedo</string>
+    <string name="lentischio">Pane Pistacia lentiscus</string>
+    <string name="mirto">Myrtus</string>
+    <string name="elicriso">Italicum microphyllum</string>
+
+
+    <!-- Category name for the beaches in Sardinia [CHAR LIMIT=20] -->
+    <string name="category_beaches">Beaches</string>
+
+
+    <!-- Category name for the cities in Sardinia [CHAR LIMIT=20] -->
+    <string name="category_cities">Cities</string>
+
+
+    <!-- Category name for the food in Sardinia [CHAR LIMIT=20] -->
+    <string name="category_food">Food</string>
+
+
+    <!-- Category name for the plants in Sardinia [CHAR LIMIT=20] -->
+    <string name="category_plants">Plants</string>
+
+
+    <string name="describe_cala_goritze">Is a beach that is located in the town of Baunei, in the southern part of the Gulf of Orosei, in Ogliastra, Sardinia.</string>
+    <string name="describe_spiaggia_del_principe">Its name comes from Prince Aga Khan\'s alleged preference for this corner of the sea. The sand is very fine. The color and clarity of this sea is due to the particular backdrop of sand and granite.</string>
+    <string name="describe_tuerredda">It is the \'jewel\' of the south-west of Sardinia: a mix of crystal clear sea, soft sand and Mediterranean scents.</string>
+    <string name="describe_stintino">Really clear and very low seabed for tens of meters, white sand, dazzling sea with all shades of blue.</string>
+    <string name="describe_porto_isana">A gem of the north-eastern coast of Sardinia, a wonder of soft sand and breathtaking colors that represents the northern limit of the marine protected area of Capo Coda Cavallo.</string>
+
+
+    <string name="describe_cagliari">The capital of Sardinia is the expression of the Mediterranean atmosphere and offers what you want from a vacation: history and art, sea and parks, comfort and good food.</string>
+    <string name="describe_alghero">Historic city at the northern tip of the western coast of Sardinia, a renowned resort also known as the capital of the Coral Riviera. It retains well-preserved traces of Catalan dominance and is also known as Barceloneta.</string>
+    <string name="describe_nuoro">The Barbagia region’s most populous town is steeped in tradition and culture, home to museums and art set in charming and beautifully preserved historical quarters.</string>
+    <string name="describe_sassari">An ancient Città Regia (Royal city) rich in history and art and the most important point of reference in the north of Sardinia due to the economic and cultural activities concentrated there, as well as a town in which numerous famous Italian personalities were born.</string>
+    <string name="describe_oristano">The main city in the central-western part of Sardinia is an ideal gateway leading into a territory filled with natural beauty and represents the noble heart of the Island, with its monuments and its rich history.</string>
+
+
+    <string name="describe_culurgiones">The tradition, quality and goodness of the flavours of Ogliastra.</string>
+    <string name="describe_pane_carasau">The centuries-old secrets of the ‘parchment paper’ bread passed down by the communities that make it.</string>
+    <string name="describe_porceddu">Porceddu or porcheddu, nowadays often italianized as porcetto, is a traditional second course of Sardinia.</string>
+    <string name="describe_seadas">Seadas (or Seada) is a Sardinian dessert. It is prepared by deep-frying a large semolina dumpling (usually between 8 and 10 cm in diameter) with a filling of soured Pecorino cheese and lemon peel in olive oil or lard, and is served covered with honey, sugar and, sometimes, salt.</string>
+    <string name="describe_malloreddusu">sometimes Italianized as gnocchetti sardi, are a type of pasta typical of Sardinian cuisine. They have the shape of thin ridged shells, long from about 2 cm up, and are made of semolina flour and water.</string>
+
+
+    <string name="describe_mirto">Myrtus communis, the common myrtle or true myrtle, is a species of flowering plant in the myrtle family Myrtaceae. It is an evergreen shrub native to southern Europe, north Africa, western Asia and the Indian Subcontinent, and also cultivated.</string>
+    <string name="describe_alloro">Laurus nobilis is an aromatic evergreen tree or large shrub with green, glabrous smooth leaves, in the flowering plant family Lauraceae. It is native to the Mediterranean region and is used as bay leaf for seasoning in cooking. Its common names include bay tree (esp. United Kingdom), bay laurel, sweet bay, true laurel, Grecian laurel or simply laurel. Laurus nobilis figures prominently in classical Greco-Roman culture.</string>
+    <string name="describe_corbezzolo">Arbutus unedo, the strawberry tree, is an evergreen shrub or small tree in the flowering plant family Ericaceae, native to the Mediterranean region and western Europe north to western France and Ireland. Due to its presence in southwest and northwest Ireland, it is known as either "Irish strawberry tree", or cain or cane apple (from the Irish name for the tree, caithne), or sometimes Killarney strawberry tree.</string>
+    <string name="describe_lentischio">Pistacia lentiscus (also lentisk; mastic; Greek: μαστίχα mastíkha) is a dioecious evergreen shrub or small tree of the genus Pistacia, growing up to 4 m (13 ft) tall which is cultivated for its aromatic resin, mainly on the Greek island of Chios.</string>
+    <string name="describe_elicriso">Characteristic of the Mediterranean maquis, the helichrysum is a heliophilous and xerophilous species. Indifferent to the substratum, it is abundant in the arid areas facing the sea and, inland, in rocky and stony places in little evolved soils. It can be the main component of degraded patches and garigues, covering wide expanses.</string>
+
+
 </resources>
