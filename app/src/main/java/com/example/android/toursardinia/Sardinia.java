@@ -5,28 +5,26 @@ import java.util.Objects;
 public class Sardinia {
 
 
-    private int mTitle;
-    private int mDescription;
+    private String mTitle;
+    private String mDescription;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-
     /**
      * Constant value that represents no image was provided for these items
      */
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Sardinia(int title, int description, int imageResourceId) {
+    public Sardinia(String title, String description, int imageResourceId) {
         this.mTitle = title;
         mDescription = description;
         mImageResourceId = imageResourceId;
     }
 
-    public int getmTitle() {
+    public String getmTitle() {
         return mTitle;
     }
 
-    public int getmDescription() {
+    public String getmDescription() {
         return mDescription;
-
     }
 
     public int getmImageResourceId() {

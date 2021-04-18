@@ -1,5 +1,6 @@
 package com.example.android.toursardinia;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -31,17 +33,20 @@ public class CitiesFragment extends Fragment {
         // Inflate the layout for this fragment
 
         final ArrayList<Sardinia> sardiniaList = new ArrayList<>();
-        sardiniaList.add(new Sardinia(R.string.cagliari, R.string.describe_cagliari, R.drawable.cagliari_principale));
-        sardiniaList.add(new Sardinia(R.string.alghero, R.string.describe_alghero, R.drawable.alghero));
-        sardiniaList.add(new Sardinia(R.string.nuoro, R.string.describe_nuoro, R.drawable.nuoro));
-        sardiniaList.add(new Sardinia(R.string.sassari, R.string.describe_sassari, R.drawable.sassari));
-        sardiniaList.add(new Sardinia(R.string.oristano, R.string.describe_oristano, R.drawable.oristano));
+        sardiniaList.add(new Sardinia(getString(R.string.cagliari), getString(R.string.describe_cagliari), R.drawable.cagliari_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.alghero), getString(R.string.describe_alghero), R.drawable.alghero_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.nuoro), getString(R.string.describe_nuoro), R.drawable.nuoro_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.sassari), getString(R.string.describe_sassari), R.drawable.sassari_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.oristano), getString(R.string.describe_oristano), R.drawable.oristano_dens));
 
 
         SardiniaAdapter sardiniaAdapter = new SardiniaAdapter(getActivity(), sardiniaList);
 
         final ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(sardiniaAdapter);
+
+
+
 
         return rootView;
 

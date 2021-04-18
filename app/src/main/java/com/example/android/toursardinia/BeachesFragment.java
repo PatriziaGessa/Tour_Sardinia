@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
  */
-public class BeachesFragment extends Fragment  {
+public class BeachesFragment extends Fragment {
 
 
     public BeachesFragment() {
@@ -36,36 +36,17 @@ public class BeachesFragment extends Fragment  {
         // Inflate the layout for this fragment
 
         final ArrayList<Sardinia> sardiniaList = new ArrayList<>();
-        sardiniaList.add(new Sardinia(R.string.cala_goritze, R.string.describe_cala_goritze, R.drawable.cala_goritze));
-        sardiniaList.add(new Sardinia(R.string.porto_istana, R.string.describe_porto_isana, R.drawable.porto_istana));
-        sardiniaList.add(new Sardinia(R.string.sapiaggia_del_principe, R.string.describe_spiaggia_del_principe, R.drawable.spiaggia_del_principe));
-        sardiniaList.add(new Sardinia(R.string.tuerredda, R.string.describe_tuerredda, R.drawable.tuerredda));
-        sardiniaList.add(new Sardinia(R.string.stintino, R.string.describe_stintino, R.drawable.la_pelosa_stintino));
+        sardiniaList.add(new Sardinia(getString(R.string.cala_goritze), getString(R.string.describe_cala_goritze), R.drawable.cala_goritze_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.porto_istana), getString(R.string.describe_porto_isana), R.drawable.porto_istana_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.spiaggia_del_principe), getString(R.string.describe_spiaggia_del_principe), R.drawable.spiaggia_del_principe_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.tuerredda), getString(R.string.describe_tuerredda), R.drawable.tuerredda_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.stintino), getString(R.string.describe_stintino), R.drawable.la_pelosa_stintino_dens));
 
 
         SardiniaAdapter sardiniaAdapter = new SardiniaAdapter(getActivity(), sardiniaList);
 
         final ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(sardiniaAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                Sardinia currentItem = (Sardinia) adapterView.getItemAtPosition(i);
-                int imageItem = currentItem.getmImageResourceId();
-                int titleItem = currentItem.getmTitle();
-                int descriptionItem = currentItem.getmDescription();
-
-                Intent intent = new Intent(getActivity(), SardiniaDetailActivity.class);
-                intent.putExtra("Image", imageItem);
-                intent.putExtra("Title", titleItem);
-                intent.putExtra("Description", descriptionItem);
-                startActivity(intent);
-
-
-            }
-        });
 
 
         return rootView;

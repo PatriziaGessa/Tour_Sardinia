@@ -1,5 +1,6 @@
 package com.example.android.toursardinia;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,17 +34,18 @@ public class PlantsFragment extends Fragment {
         // Inflate the layout for this fragment
 
         final ArrayList<Sardinia> sardiniaList = new ArrayList<>();
-        sardiniaList.add(new Sardinia(R.string.alloro, R.string.describe_alloro, R.drawable.alloro));
-        sardiniaList.add(new Sardinia(R.string.corbezzolo, R.string.describe_corbezzolo, R.drawable.cobezzolo));
-        sardiniaList.add(new Sardinia(R.string.lentischio, R.string.describe_lentischio, R.drawable.lentisco));
-        sardiniaList.add(new Sardinia(R.string.mirto, R.string.describe_mirto, R.drawable.mirto));
-        sardiniaList.add(new Sardinia(R.string.elicriso, R.string.describe_elicriso, R.drawable.elicriso));
+        sardiniaList.add(new Sardinia(getString(R.string.alloro), getString(R.string.describe_alloro), R.drawable.alloro_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.corbezzolo), getString(R.string.describe_corbezzolo), R.drawable.cobezzolo_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.lentischio), getString(R.string.describe_lentischio), R.drawable.lentisco_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.mirto), getString(R.string.describe_mirto), R.drawable.mirto_dens));
+        sardiniaList.add(new Sardinia(getString(R.string.elicriso), getString(R.string.describe_elicriso), R.drawable.elicriso_dens));
 
 
         SardiniaAdapter sardiniaAdapter = new SardiniaAdapter(getActivity(), sardiniaList);
 
         final ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(sardiniaAdapter);
+
 
         return rootView;
 
