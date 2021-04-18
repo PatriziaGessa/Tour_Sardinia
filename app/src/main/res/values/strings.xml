@@ -72,6 +72,8 @@
     <string name="describe_corbezzolo">Arbutus unedo, the strawberry tree, is an evergreen shrub or small tree in the flowering plant family Ericaceae, native to the Mediterranean region and western Europe north to western France and Ireland. Due to its presence in southwest and northwest Ireland, it is known as either "Irish strawberry tree", or cain or cane apple (from the Irish name for the tree, caithne), or sometimes Killarney strawberry tree.</string>
     <string name="describe_lentischio">Pistacia lentiscus (also lentisk; mastic; Greek: μαστίχα mastíkha) is a dioecious evergreen shrub or small tree of the genus Pistacia, growing up to 4 m (13 ft) tall which is cultivated for its aromatic resin, mainly on the Greek island of Chios.</string>
     <string name="describe_elicriso">Characteristic of the Mediterranean maquis, the helichrysum is a heliophilous and xerophilous species. Indifferent to the substratum, it is abundant in the arid areas facing the sea and, inland, in rocky and stony places in little evolved soils. It can be the main component of degraded patches and garigues, covering wide expanses.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
