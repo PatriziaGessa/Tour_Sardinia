@@ -57,7 +57,7 @@ public class BeachesFragment extends Fragment  {
                 int titleItem = currentItem.getmTitle();
                 int descriptionItem = currentItem.getmDescription();
 
-                Intent intent = new Intent(BeachesFragment.this, SardiniaDetailActivity.class);
+                Intent intent = new Intent(getActivity(), SardiniaDetailActivity.class);
                 intent.putExtra("Image", imageItem);
                 intent.putExtra("Title", titleItem);
                 intent.putExtra("Description", descriptionItem);

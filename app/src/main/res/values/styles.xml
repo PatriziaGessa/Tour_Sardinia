@@ -52,8 +52,6 @@
 
     <!-- Style for the Cover ImageView in activity_now_playing.xml -->
     <style name="ImageDetail">
-        <item name="android:layout_width">@dimen/detail_photo_width</item>
-        <item name="android:layout_height">@dimen/detail_photo_height</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_margin">@dimen/detail_photo_margin</item>
     </style>
