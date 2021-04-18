@@ -4,4 +4,15 @@
     <dimen name="card_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="list_item_avatar_size">40dp</dimen>
+
+
+
+    <dimen name="detail_photo_width">match_parent</dimen>
+    <dimen name="detail_photo_height">300dp</dimen>
+    <dimen name="detail_photo_margin">4dp</dimen>
+
+
+
+    <dimen name="title_detail">20sp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
 </resources>

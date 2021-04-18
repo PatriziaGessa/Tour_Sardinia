@@ -1,5 +1,6 @@
 package com.example.android.toursardinia;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +8,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +19,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
  */
-public class BeachesFragment extends Fragment {
+public class BeachesFragment extends Fragment  {
 
 
     public BeachesFragment() {
@@ -45,7 +48,26 @@ public class BeachesFragment extends Fragment {
         final ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(sardiniaAdapter);
 
-        return rootView;
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+                Sardinia currentItem = (Sardinia) adapterView.getItemAtPosition(i);
+                int imageItem = currentItem.getmImageResourceId();
+                int titleItem = currentItem.getmTitle();
+                int descriptionItem = currentItem.getmDescription();
+
+                Intent intent = new Intent(BeachesFragment.this, SardiniaDetailActivity.class);
+                intent.putExtra("Image", imageItem);
+                intent.putExtra("Title", titleItem);
+                intent.putExtra("Description", descriptionItem);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+        return rootView;
     }
 }

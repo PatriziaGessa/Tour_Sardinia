@@ -50,6 +50,37 @@
     </style>
 
 
+    <!-- Style for the Cover ImageView in activity_now_playing.xml -->
+    <style name="ImageDetail">
+        <item name="android:layout_width">@dimen/detail_photo_width</item>
+        <item name="android:layout_height">@dimen/detail_photo_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/detail_photo_margin</item>
+    </style>
+
+
+
+    <!-- Style for the Title of the song TextView in activity_now_playing.xml -->
+    <style name="TitleDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/title_detail</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Style for the Singer of the song TextView in activity_now_playing.xml -->
+    <style name="DescriptionDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/dimen_16dp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
 
 
 
