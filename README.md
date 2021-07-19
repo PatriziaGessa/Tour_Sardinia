@@ -18,7 +18,3 @@ Planning your app design and navigation before coding
 - Navigating between lists in Fragments using either a ViewPager plus TabLayout or Navigation Drawer
 - Creating your own custom classes
 - Properly handling images or audio
-
-
-
-
